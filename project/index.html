@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter&family=Dancing+Script&family=Nunito:wght@300&family=Oswald&family=Supermercado+One&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: grey;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      footer {
+        height: 10vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header {
+        height: 10vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 10vh; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+font-family: 'Oswald', sans-serif;
+font-size: 30px;
+      }
+      nav ul a {
+        color: white;
+        text-decoration: none;
+      }
+      nav ul li {
+        list-style: none;
+        display: inline;
+        padding: 0 23px;
+      }
+      #name {
+        position: relative;
+        left: -11vw;
+      }
+      .right {
+        position: relative;
+        right: -20vw;
+      }
+      .home {
+        height: 100vh;
+      }
+      #me {
+        background-color: grey;
+        height: 55vh;
+        width: 32vw;
+        border: 2px solid grey;
+        position: relative;
+        left: 10vw;
+        top: 10vh;
+      }
+      #adjust {
+        font-size: 28px;
+        text-align: center;
+        background-color: grey;
+        color: white;
+        width: 45vw;
+        position: relative;
+        right: 6vw;
+        top: 10vh;
+        /* display: inline; */
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+        font-weight: 1000;
+      }
+      #ad1 {
+        text-align: center;
+        position: relative;
+        top: 10vh;
+      }
+      #image {
+        position: relative;
+        left: 50vw;
+        top: -15vw;
+        border: black;
+        border-radius: 50px;
+      }
+      .hobby {
+        height: 10vh;
+        width: 10vw;
+        background-color: black;
+        color: white;
+        position: relative;
+        left: 18vh;
+        bottom: 20vh;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #this,
+      #that {
+        color: white;
+        text-decoration: none;
+        font-family: 'Architects Daughter', cursive;
+        
+      }
+      .skill {
+        height: 10vh;
+        width: 10vw;
+        background-color: black;
+        color: white;
+        position: relative;
+        left: 65vh;
+        bottom: 30.5vh;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #hello{
+          text-align: center;
+          font-size: 60px;
+      }
+      .merihobby{
+          display: grid;
+          grid-gap: 10px 10px;
+          grid-template-columns: auto auto;
+        
+      }
+      .dancename,.singname,.codename,.drawingname{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 60px;
+          
+      }
+      .dance,.sing,.code,.drawing{
+          position: relative;
+          left: 5vh;
+          border: black;
+          border-radius: 20px;
+      }
+      /* .calculusbar{
+          background-color: black;
+          height: 10px;
+          width: 60%;
+      }
+      .calculus{
+          background-color: grey;
+          height: 20px;
+          width: 90%;
+          border: 2px solid black; */
+      }
+      .page3{
+          height: 90vh;
+          background-color: grey;
+
+      }
+
+     #skillhead{
+         text-align: center;
+     }
+     .
+     .page3{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     .calculusall{
+         background-color: grey;
+         height: 20vh;
+         width: 90%;
+         border: 10px solid black;
+         border-radius: 20px;
+         position: relative;
+         left: 9vh;
+         display: flex;
+         justify-content: left;
+         align-items: center;
+         /* margin: 20px; */
+     }
+     .calbar{
+         background-color: black;
+         height:2vh;
+         width: 60vw;
+         display: flex;
+         justify-content: left;
+         align-items: flex-end;
+     }
+     .calpbar{
+         background-color: white;
+         height: 2vh;
+         width: 80%;
+     }
+     #calimg{
+         position: relative;
+         left: 35vh;
+     }
+     .pythonall{
+         background-color: grey;
+         height: 20vh;
+         width: 90%;
+         border: 10px solid black;
+         border-radius: 20px;
+         position: relative;
+         left: 9vh;
+         display: flex;
+         justify-content: left;
+         align-items: center;
+     }
+     .pythonbar{
+         background-color: black;
+         height:2vh;
+         width: 60vw;
+         display: flex;
+         justify-content: left;
+         align-items: flex-end;
+     }
+     .pythonpbar{
+         background-color: white;
+         height: 2vh;
+         width: 50%;
+     }
+     #pimg{
+         position: relative;
+         left: 35vh;
+     }
+     .call{
+         background-color: grey;
+         height: 20vh;
+         width: 90%;
+         border: 10px solid black;
+         border-radius: 20px;
+         position: relative;
+         left: 9vh;
+         display: flex;
+         justify-content: left;
+         align-items: center;
+     }
+     .cbar{
+         background-color: black;
+         height:2vh;
+         width: 60vw;
+         display: flex;
+         justify-content: left;
+         align-items: flex-end;
+     }
+     .cpbar{
+         background-color: white;
+         height: 2vh;
+         width: 30%;
+     }
+     #cimg{
+         position: relative;
+         left: 35vh;
+     }
+    .dancename,.codename,.drawingname,.singname{
+        font-family: 'Dancing Script', cursive;
+    }
+    .calname,.pname,.cname{
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+        left: 2vh;
+        font-weight: 2000;
+    }
+    #danceim,#codeim,#drawim,#singim{
+        border-radius: 70px;
+    }
+    #insta{
+      position: relative;
+      right: 80vh;
+    }
+    #link{
+      position: relative;
+      right: 70vh;
+    }
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home" id="name">ANANYA CHOUDHARY</a></li>
+          <li><a href="#home" class="right">HOME</a></li>
+          <li><a href="#hobby" class="right">MY HOBBIES</a></li>
+          <li><a href="#skillset" class="right">SKILLS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="home" id="home">
+      <div class="me" id="me">
+        <h1 id="ad1">A METHODICAL,DEDICATED AND LOGIC DRIVEN PERSON</h1>
+        <p id="adjust">
+          I am a first year B.Tech student at Netaji Subhash University of
+          Technology.I am doing my bachelors in Information Technology with
+          specialisation in Infomation and Netwrok Security.
+        </p>
+        <img src="/mefinal2.jpg" alt="" id="image" height="350vw" />
+      </div>
+    </div>
+    <div class="button">
+      <div class="hobby">
+        <a href="#hobby" id="this">MY HOBBIES</a>
+        <!-- <a href="#" >SKILLS</a> -->
+      </div>
+      <div class="skill">
+        <a href="#skillset" id="that">SKILLS</a>
+      </div>
+   
+    <div class="page2" id="hobby">
+        <h1 id="hello">MY HOBBIES</h1>
+        <div class="merihobby">
+           <div class="dance"> <img src="/DANCEFINAL2.jpg" hieght="30px" alt="DANCING" border="5" id="danceim"></div>
+           <div class="dancename">DANCING</div> 
+           <div class="sing"><img src="/singing.jpg" hieght="30px" alt="SINGING"border="5"id="singim" ></div>
+           <div class="singname">SINGING</div>
+           <div class="code"><img src="/coding.jpg" hieght="30px" alt="CODING" border="5" id="codeim"></div>
+           <div class="codename">CODING</div>
+           <div class="drawing"><img src="/drwaing.jpg" hieght="30px" alt="DRAWING" border="5" id="drawim"></div>
+           <div class="drawingname">DRAWING</div>>
+           
+          
+           
+        
+    </div>
+    <div class="page3" id="skillset">
+        <big><h1 id="skillhead">SKILLS</h1></big>
+        <small><h1 class="calname">CALCULUS</h1></small><br>
+        <div class="calculusall">
+            
+            
+            <div class="calbar">
+                <div class="calpbar"></div>
+
+            </div>
+            <img src="/calculus.jpg" alt="" id="calimg" height="90px">
+        </div>
+        <small><h1 class="pname">PYTHON</h1></small><br>
+        <div class="pythonall">
+            
+            <div class="pythonbar">
+                <div class="pythonpbar"></div>
+
+            </div>
+            <img src="/python.jpg" alt="" id="pimg" height="90px">
+        </div>
+        <small> <h1 class="cname">C++</h1></small>
+        <div class="call">
+            <div class="cbar">
+                <div class="cpbar">
+
+                </div>
+            </div>
+            <div>
+                <img src="/c++.jpg" alt="" height="90px" id="cimg">
+            </div>
+        </div>
+        
+        
+    </div>
+    <footer><a href="https://www.instagram.com/ananya__0310/"><img src="/insta icon.jpg" alt="" height="25px" id="insta"></a>
+      <a href="https://www.linkedin.com/in/ananya-choudhary-69b4ba224/"><img src="/linkedin icon.jpg" alt="" height="25px" id="link"></a>
+     <p> copyright &copy; PORTFOLIO</p>
+    </footer>
+  </body>
+</html>
